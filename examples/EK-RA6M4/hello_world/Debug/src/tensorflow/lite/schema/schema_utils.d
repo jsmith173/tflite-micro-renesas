@@ -1,0 +1,46 @@
+src/tensorflow/lite/schema/schema_utils.o: \
+ ../src/tensorflow/lite/schema/schema_utils.cc \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/tensorflow/lite/schema/schema_utils.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/flatbuffers.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/array.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/base.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/stl_emulation.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/vector.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/buffer.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/buffer_ref.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/verifier.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/util.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/detached_buffer.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/allocator.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/default_allocator.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/flatbuffer_builder.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/string.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/struct.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/table.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/vector_downward.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/tensorflow/lite/schema/schema_generated.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/tensorflow/lite/kernels/internal/compatibility.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/tensorflow/lite/kernels/op_macros.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/tensorflow/lite/micro/debug_log.h
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/tensorflow/lite/schema/schema_utils.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/flatbuffers.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/array.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/base.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/stl_emulation.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/vector.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/buffer.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/buffer_ref.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/verifier.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/util.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/detached_buffer.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/allocator.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/default_allocator.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/flatbuffer_builder.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/string.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/struct.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/table.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/third_party/flatbuffers/include/flatbuffers/vector_downward.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/tensorflow/lite/schema/schema_generated.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/tensorflow/lite/kernels/internal/compatibility.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/tensorflow/lite/kernels/op_macros.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/src/tensorflow/lite/micro/debug_log.h:

@@ -1,5 +1,5 @@
 /***********************************************************************************************************************
- * Copyright [2020-2021] Renesas Electronics Corporation and/or its affiliates.  All Rights Reserved.
+ * Copyright [2020-2022] Renesas Electronics Corporation and/or its affiliates.  All Rights Reserved.
  *
  * This software and documentation are supplied by Renesas Electronics America Inc. and may only be used with products
  * of Renesas Electronics Corp. and its affiliates ("Renesas").  No other uses are authorized.  Renesas products are
@@ -106,7 +106,6 @@ const ioport_api_t g_ioport_on_ioport =
     .pinCfg               = R_IOPORT_PinCfg,
     .pinEventInputRead    = R_IOPORT_PinEventInputRead,
     .pinEventOutputWrite  = R_IOPORT_PinEventOutputWrite,
-    .pinEthernetModeCfg   = R_IOPORT_EthernetModeCfg,
     .pinRead              = R_IOPORT_PinRead,
     .pinWrite             = R_IOPORT_PinWrite,
     .portDirectionSet     = R_IOPORT_PortDirectionSet,
@@ -504,7 +503,7 @@ fsp_err_t R_IOPORT_PortEventInputRead (ioport_ctrl_t * const p_ctrl, bsp_io_port
     FSP_ERROR_RETURN(IOPORT_OPEN == p_instance_ctrl->open, FSP_ERR_NOT_OPEN);
     FSP_ASSERT(NULL != p_event_data);
     uint32_t port_number = port >> IOPORT_PRV_PORT_OFFSET;
-    FSP_ERROR_RETURN((port_number != 0) && (port_number <= BSP_FEATURE_IOPORT_ELC_PORTS), FSP_ERR_INVALID_ARGUMENT);
+    FSP_ERROR_RETURN((BSP_FEATURE_IOPORT_ELC_PORTS & (1 << port_number)), FSP_ERR_INVALID_ARGUMENT);
 #else
     FSP_PARAMETER_NOT_USED(p_ctrl);
 #endif
@@ -543,7 +542,7 @@ fsp_err_t R_IOPORT_PinEventInputRead (ioport_ctrl_t * const p_ctrl, bsp_io_port_
     FSP_ERROR_RETURN(IOPORT_OPEN == p_instance_ctrl->open, FSP_ERR_NOT_OPEN);
     FSP_ASSERT(NULL != p_pin_event);
     uint32_t port_number = pin >> IOPORT_PRV_PORT_OFFSET;
-    FSP_ERROR_RETURN((port_number != 0) && (port_number <= BSP_FEATURE_IOPORT_ELC_PORTS), FSP_ERR_INVALID_ARGUMENT);
+    FSP_ERROR_RETURN((BSP_FEATURE_IOPORT_ELC_PORTS & (1 << port_number)), FSP_ERR_INVALID_ARGUMENT);
 #else
     FSP_PARAMETER_NOT_USED(p_ctrl);
 #endif
@@ -599,7 +598,7 @@ fsp_err_t R_IOPORT_PortEventOutputWrite (ioport_ctrl_t * const p_ctrl,
     FSP_ERROR_RETURN(IOPORT_OPEN == p_instance_ctrl->open, FSP_ERR_NOT_OPEN);
     FSP_ERROR_RETURN(mask_value > (ioport_size_t) 0, FSP_ERR_INVALID_ARGUMENT);
     uint32_t port_number = port >> IOPORT_PRV_PORT_OFFSET;
-    FSP_ERROR_RETURN((port_number != 0) && (port_number <= BSP_FEATURE_IOPORT_ELC_PORTS), FSP_ERR_INVALID_ARGUMENT);
+    FSP_ERROR_RETURN((BSP_FEATURE_IOPORT_ELC_PORTS & (1 << port_number)), FSP_ERR_INVALID_ARGUMENT);
 #else
     FSP_PARAMETER_NOT_USED(p_ctrl);
 #endif
@@ -640,7 +639,7 @@ fsp_err_t R_IOPORT_PinEventOutputWrite (ioport_ctrl_t * const p_ctrl, bsp_io_por
     FSP_ERROR_RETURN(IOPORT_OPEN == p_instance_ctrl->open, FSP_ERR_NOT_OPEN);
     FSP_ERROR_RETURN((pin_value == BSP_IO_LEVEL_HIGH) || (pin_value == BSP_IO_LEVEL_LOW), FSP_ERR_INVALID_ARGUMENT);
     uint32_t port_number = pin >> IOPORT_PRV_PORT_OFFSET;
-    FSP_ERROR_RETURN((port_number != 0) && (port_number <= BSP_FEATURE_IOPORT_ELC_PORTS), FSP_ERR_INVALID_ARGUMENT);
+    FSP_ERROR_RETURN((BSP_FEATURE_IOPORT_ELC_PORTS & (1 << port_number)), FSP_ERR_INVALID_ARGUMENT);
 #else
     FSP_PARAMETER_NOT_USED(p_ctrl);
 #endif
@@ -669,39 +668,6 @@ fsp_err_t R_IOPORT_PinEventOutputWrite (ioport_ctrl_t * const p_ctrl, bsp_io_por
     }
 
     r_ioport_hw_pin_event_output_data_write(port, set_bits, reset_bits, pin_value);
-
-    return FSP_SUCCESS;
-}
-
-/*******************************************************************************************************************//**
- * Configures Ethernet channel PHY mode. Implements @ref ioport_api_t::pinEthernetModeCfg.
- *
- * @retval FSP_SUCCESS              Ethernet PHY mode set
- * @retval FSP_ERR_INVALID_ARGUMENT Channel or mode not valid
- * @retval FSP_ERR_UNSUPPORTED      Ethernet configuration not supported on this device.
- * @retval FSP_ERR_NOT_OPEN         The module has not been opened
- * @retval FSP_ERR_ASSERTION        NULL pointer
- *
- * @note This function is not re-entrant.
- **********************************************************************************************************************/
-fsp_err_t R_IOPORT_EthernetModeCfg (ioport_ctrl_t * const     p_ctrl,
-                                    ioport_ethernet_channel_t channel,
-                                    ioport_ethernet_mode_t    mode)
-{
-    FSP_ERROR_RETURN(1U == BSP_FEATURE_IOPORT_HAS_ETHERNET, FSP_ERR_UNSUPPORTED);
-
-#if (1 == IOPORT_CFG_PARAM_CHECKING_ENABLE)
-    ioport_instance_ctrl_t * p_instance_ctrl = (ioport_instance_ctrl_t *) p_ctrl;
-    FSP_ASSERT(NULL != p_instance_ctrl);
-    FSP_ERROR_RETURN(IOPORT_OPEN == p_instance_ctrl->open, FSP_ERR_NOT_OPEN);
-    FSP_ERROR_RETURN(channel < IOPORT_ETHERNET_CHANNEL_END, FSP_ERR_INVALID_ARGUMENT);
-    FSP_ERROR_RETURN(mode < IOPORT_ETHERNET_MODE_END, FSP_ERR_INVALID_ARGUMENT);
-#else
-    FSP_PARAMETER_NOT_USED(p_ctrl);
-    FSP_PARAMETER_NOT_USED(channel);
-#endif
-
-    R_PMISC->PFENET = (uint8_t) mode;
 
     return FSP_SUCCESS;
 }
