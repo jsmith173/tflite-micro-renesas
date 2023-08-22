@@ -7,24 +7,23 @@ ra/fsp/src/r_ioport/r_ioport.o: ../ra/fsp/src/r_ioport/r_ioport.c \
  D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_cfg/fsp_cfg/bsp/bsp_mcu_family_cfg.h \
  D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_cfg/fsp_cfg/bsp/bsp_mcu_device_pn_cfg.h \
  D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_cfg/fsp_cfg/bsp/bsp_mcu_device_cfg.h \
- d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra6m4\bsp_mcu_info.h \
- d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra6m4\bsp_elc.h \
- d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra6m4\bsp_feature.h \
+ d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra4m1\bsp_mcu_info.h \
+ d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra4m1\bsp_elc.h \
+ d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra4m1\bsp_feature.h \
  D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_cfg/fsp_cfg/bsp/board_cfg.h \
- d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra6m4_ek\board.h \
- d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra6m4_ek\board_init.h \
- d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra6m4_ek\board_leds.h \
- d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra6m4_ek\board_ethernet_phy.h \
+ d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra4m1_ek\board.h \
+ d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra4m1_ek\board_init.h \
+ d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra4m1_ek\board_leds.h \
  d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\all\bsp_arm_exceptions.h \
  D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_gen/vector_data.h \
  d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\cmsis\device\renesas\include\renesas.h \
  D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/cmsis_compiler.h \
  D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/cmsis_gcc.h \
- d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\cmsis\device\renesas\include\R7FA6M4AF.h \
- D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/core_cm33.h \
+ d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\cmsis\device\renesas\include\R7FA4M1AB.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/core_cm4.h \
  D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/cmsis_version.h \
  D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/cmsis_compiler.h \
- D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/mpu_armv8.h \
+ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/mpu_armv7.h \
  d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\cmsis\device\renesas\include\system.h \
  d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\cmsis\device\renesas\include\system.h \
  d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\all\bsp_common.h \
@@ -54,24 +53,23 @@ D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_gen/bsp_cl
 D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_cfg/fsp_cfg/bsp/bsp_mcu_family_cfg.h:
 D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_cfg/fsp_cfg/bsp/bsp_mcu_device_pn_cfg.h:
 D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_cfg/fsp_cfg/bsp/bsp_mcu_device_cfg.h:
-d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra6m4\bsp_mcu_info.h:
-d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra6m4\bsp_elc.h:
-d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra6m4\bsp_feature.h:
+d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra4m1\bsp_mcu_info.h:
+d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra4m1\bsp_elc.h:
+d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\ra4m1\bsp_feature.h:
 D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_cfg/fsp_cfg/bsp/board_cfg.h:
-d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra6m4_ek\board.h:
-d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra6m4_ek\board_init.h:
-d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra6m4_ek\board_leds.h:
-d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra6m4_ek\board_ethernet_phy.h:
+d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra4m1_ek\board.h:
+d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra4m1_ek\board_init.h:
+d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\board\ra4m1_ek\board_leds.h:
 d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\all\bsp_arm_exceptions.h:
 D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra_gen/vector_data.h:
 d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\cmsis\device\renesas\include\renesas.h:
 D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/cmsis_compiler.h:
 D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/cmsis_gcc.h:
-d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\cmsis\device\renesas\include\R7FA6M4AF.h:
-D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/core_cm33.h:
+d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\cmsis\device\renesas\include\R7FA4M1AB.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/core_cm4.h:
 D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/cmsis_version.h:
 D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/cmsis_compiler.h:
-D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/mpu_armv8.h:
+D:/Work/Renesas/tflite-micro-renesas/examples/EK-RA6M4/hello_world/ra/arm/CMSIS_5/CMSIS/Core/Include/mpu_armv7.h:
 d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\cmsis\device\renesas\include\system.h:
 d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\cmsis\device\renesas\include\system.h:
 d:\work\renesas\tflite-micro-renesas\examples\ek-ra6m4\hello_world\ra\fsp\src\bsp\mcu\all\bsp_common.h:

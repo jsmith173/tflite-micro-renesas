@@ -30,7 +30,7 @@ RM := rm -rf
 -include ra/fsp/src/r_ioport/subdir.mk
 -include ra/fsp/src/bsp/mcu/all/subdir.mk
 -include ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/subdir.mk
--include ra/board/ra6m4_ek/subdir.mk
+-include ra/board/ra4m1_ek/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -130,7 +130,7 @@ all: Hello_World_TFLM_EKRA6M4.elf secondary-outputs
 
 # Tool invocations
 Hello_World_TFLM_EKRA6M4.elf: $(OBJS) $(USER_OBJS) $(LINKER_SCRIPT)
-	$(file > Hello_World_TFLM_EKRA6M4.elf.in,-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fpermissive -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g -T "fsp.ld" -Xlinker --gc-sections -L "D:\\Work\\Renesas\\tflite-micro-renesas\\examples\\EK-RA6M4\\hello_world/script" -Wl,-Map,"Hello_World_TFLM_EKRA6M4.map" --specs=nano.specs --specs=rdimon.specs -o "Hello_World_TFLM_EKRA6M4.elf" -Wl,--start-group $(OBJS) $(USER_OBJS) $(LIBS) -Wl,--end-group)
+	$(file > Hello_World_TFLM_EKRA6M4.elf.in,-mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fpermissive -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g -T "fsp.ld" -Xlinker --gc-sections -L "D:\\Work\\Renesas\\tflite-micro-renesas\\examples\\EK-RA6M4\\hello_world/script" -Wl,-Map,"Hello_World_TFLM_EKRA6M4.map" --specs=nano.specs --specs=rdimon.specs -o "Hello_World_TFLM_EKRA6M4.elf" -Wl,--start-group $(OBJS) $(USER_OBJS) $(LIBS) -Wl,--end-group)
 	@echo Building target: $@ && arm-none-eabi-g++ @"Hello_World_TFLM_EKRA6M4.elf.in"
 
 Hello_World_TFLM_EKRA6M4.srec: Hello_World_TFLM_EKRA6M4.elf
